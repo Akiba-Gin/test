@@ -1,0 +1,91 @@
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp
+$ git clone https://github.com/Akiba-Gin/test.git
+Cloning into 'test'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp
+$ git clone https://github.com/Akiba-Gin/test.git
+fatal: destination path 'test' already exists and is not an empty directory.
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp
+$ cd test
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ ls
+h.html  README.md
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        h.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git add .
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   h.html
+
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git commit -m "h.html added"
+[main 49230ff] h.html added
+ 1 file changed, 11 insertions(+)
+ create mode 100644 h.html
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   h.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git add .
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git commit -m "h.html added"
+[main 795edbc] h.html added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 712 bytes | 712.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Akiba-Gin/test.git
+   fcf901d..795edbc  main -> main
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+gurud@GUNDAM-RX7802 MINGW64 /c/xampp/htdocs/attendanceapp/test (main)
+$
